@@ -2,6 +2,9 @@
 	import Footer from './components/footer.svelte';
 	import Header from './components/header.svelte';
 	import Heart from './components/heart.svelte';
+	import Quiz from './components/quiz.svelte';
+
+	let accepted = false;
 </script>
 
 <div
@@ -9,7 +12,11 @@
 >
 	<Header />
 	<main class="flex flex-grow items-center justify-center">
-		<Heart />
+		{#if accepted}
+			<Heart />
+		{:else}
+			<Quiz onAccept={() => (accepted = true)} />
+		{/if}
 	</main>
 	<Footer />
 </div>
