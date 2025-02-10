@@ -1,8 +1,5 @@
 <header>
-	<div>
-		<h2>be my valentine</h2>
-		<div>
-			<p></p>
-		</div>
+	<div class="flex flex-row items-center text-3xl font-semibold">
+		<p>be my valentine</p>
 	</div>
 </header>

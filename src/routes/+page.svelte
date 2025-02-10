@@ -4,8 +4,12 @@
 	import Heart from './components/heart.svelte';
 </script>
 
-<div class="flex min-h-screen flex-col items-center bg-neutral-800 p-4 text-neutral-200">
+<div
+	class="flex min-h-screen flex-col items-center justify-between bg-neutral-800 p-4 text-neutral-200"
+>
 	<Header />
-	<Heart />
+	<main class="flex flex-grow items-center justify-center">
+		<Heart />
+	</main>
 	<Footer />
 </div>

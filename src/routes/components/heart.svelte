@@ -24,12 +24,12 @@
 	});
 </script>
 
-<div class=" flex h-screen flex-col items-center justify-center pt-10">
-	<div bind:this={heartElement} class="flex h-screen items-center justify-center">
+<main class="flex flex-col items-center justify-center">
+	<div bind:this={heartElement} class="flex items-center justify-center">
 		<div
 			class="transform transition-all duration-1000 ease-in-out {isVisible
-				? 'scale-200 opacity-100'
-				: 'scale-25 opacity-0'}"
+				? 'scale-150 opacity-100'
+				: 'scale-50 opacity-0'}"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -50,10 +50,10 @@
 		</div>
 	</div>
 
-	<div class="flex h-screen items-center justify-between">
-		<p class="text-center text-2xl font-bold text-pink-600">Happy Valentine's Day! ❤️</p>
+	<div class="mt-8 flex items-center justify-center p-6">
+		<p class="text-center text-2xl font-semibold text-pink-600">Happy Valentine's Day! ❤️</p>
 	</div>
-</div>
+</main>
 
 <style>
 	@keyframes pulse {
