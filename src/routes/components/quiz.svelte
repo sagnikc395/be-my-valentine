@@ -37,6 +37,12 @@
 		}
 	}
 
+	function handleYes() {
+		yesScale.set(1.2).then(() => {
+			onAccept();
+		});
+	}
+
 	$: message = noCount > 0 ? noMessages[Math.min(noCount - 1, noMessages.length - 1)] : '';
 </script>
 
@@ -46,7 +52,7 @@
 	<div class="flex min-w-[400px] items-center justify-center gap-8">
 		<div style="transform: scale({$yesScale})" class="transform transition-all duration-300">
 			<button
-				on:click={onAccept}
+				on:click={handleYes}
 				class="rounded-lg bg-pink-600 px-8 py-4 text-xl font-bold whitespace-nowrap text-white transition-all hover:bg-pink-700"
 			>
 				Yes

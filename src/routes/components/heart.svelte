@@ -51,7 +51,7 @@
 	</div>
 
 	<div class="mt-8 flex items-center justify-center p-6">
-		<p class="text-center text-2xl font-semibold text-pink-600">Happy Valentine's Day! ❤️</p>
+		<p class="text-center text-2xl font-semibold text-pink-600">Love you loads ! ❤️</p>
 	</div>
 </main>
 
