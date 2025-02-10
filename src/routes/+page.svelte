@@ -13,7 +13,10 @@
 	<Header />
 	<main class="flex flex-grow items-center justify-center">
 		{#if accepted}
-			<Heart />
+			<div class="relative flex flex-col items-center gap-4">
+				<img src="/pikachu.gif" alt="happy pikachy :D" class="h-64 w-64 object-contain p-4" />
+				<Heart />
+			</div>
 		{:else}
 			<Quiz onAccept={() => (accepted = true)} />
 		{/if}
